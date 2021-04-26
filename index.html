@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./bootstrap-4.6/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+          <div class="card-header text-white d-flex justify-content-between align-items-center bg-dark">
+           Bictia nightclub
+          </div>
+              <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="Username">Nombre</label>
+                        <input type="id" class="form-control" id="Nombre" placeholder="Ingrese su nombre">
+                      </div>                  
+                  <div class="form-group">
+                    <label for="sexo">Genero</label>
+                    <select class="form-control" id="sexo">
+                        <option>Elije alguna</option>
+                      <option value="FEMENINO">Femenino</option>
+                      <option value ="MASCULINO">Masculino</option>                      
+                    </select>
+                    <div class="form-group">
+                        <label for="edad">Edad</label>
+                        <input type="id" class="form-control" id="edad" placeholder="Ingrese su edad">
+                      </div>
+                  </div> 
+                  
+                                                     
+                </form>
+                <input type="button"type="button" class="btn btn-primary" onclick="validacion()"value = ingresar>
+          </div>
+
+            
+
+          
+        </div>
+        <script>
+            function validacion(){
+            let nombre = document.getElementById('Nombre').value    
+            let sexo = document.getElementById('sexo').value
+            let edad = document.getElementById('edad').value
+    
+            if(edad<18){
+                alert('Tu eres menor de edad, no puedes ingresar')
+            }else{
+                alert('Eres mayor de edad, puedes ingresar')
+            if(sexo=="MASCULINO"){
+                alert('Si eres hombre cover 30000')        
+            }else{
+                alert('Si eres mujer pagas 5000')
+            }
+            }
+    
+            
+    
+    
+    
+             }       
+         
+            
+            
+            
+        </script>
+        
+
+     
+
+    
+    
+    
+
+    <script src="./js/jquery-3.6.min.js"></script>
+    <script src="./bootstrap-4.6/js/bootstrap.bundle.min.js"></script> 
+    
+    
+        
+    
+</body>
+</html>
